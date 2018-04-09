@@ -1,0 +1,13 @@
+{
+    "name": "achilleskal/summarizer-bundle",
+    "description": "Sample symfony bundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Achilles Kaloeridis",
+            "email": "achilleas90gr@gmail.com"
+        }
+    ],
+    "require": {}
+}

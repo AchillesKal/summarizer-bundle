@@ -3,7 +3,7 @@
 namespace AchillesKal\SummarizerBundle\Tests;
 
 use PHPUnit\Framework\TestCase;
-use App\Service\TextSummarizer;
+use AchillesKal\SummarizerBundle\TextSummarizer;
 
 class TextSummarizerTest extends TestCase
 {
@@ -15,7 +15,7 @@ class TextSummarizerTest extends TestCase
         $expectedText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis quis diam sit amet lacinia. Cras iaculis in sapien vitae ullamcorper. Quisque magna libero, blandit sit amet maximus eu, dictum non dolor. Duis vulputate non enim ac condimentum...";
         $testSummarizer = new TextSummarizer();
 
-        $summary = $testSummarizer->summarize($text);
+        $summary = $testSummarizer->summarize($text, 300);
 
         $this->assertTrue($expectedText == $summary);
     }

@@ -15,6 +15,13 @@
     "autoload": {
         "psr-4": {
             "AchillesKal\\SummarizerBundle\\": "src/"
+
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AchillesKal\\SummarizerBundle\\Tests\\": "tests/"
+
         }
     }
 }

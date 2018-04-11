@@ -6,7 +6,7 @@
     <services>
         <service id="achilleskal_summarizer.text_summarizer" class="AchillesKal\SummarizerBundle\TextSummarizer" public="true" />
 
-        <service id="achilleskal_summarizer.api_controller" class="AchillesKal\SummarizerBundle\Controller\TextSummarizerApiController">
+        <service id="achilleskal_summarizer.api_controller" class="AchillesKal\SummarizerBundle\Controller\TextSummarizerApiController" public="true">
             <argument type="service" id="achilleskal_summarizer.text_summarizer" />
         </service>
 

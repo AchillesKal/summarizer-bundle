@@ -5,6 +5,11 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
         <service id="achilleskal_summarizer.text_summarizer" class="AchillesKal\SummarizerBundle\TextSummarizer" public="true" />
+
+        <service id="achilleskal_summarizer.api_controller" class="AchillesKal\SummarizerBundle\Controller\TextSummarizerApiController">
+            <argument type="service" id="achilleskal_summarizer.text_summarizer" />
+        </service>
+
         <service id="AchillesKal\SummarizerBundle\TextSummarizer" alias="achilleskal_summarizer.text_summarizer" public="false" />
     </services>
 </container>

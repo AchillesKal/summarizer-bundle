@@ -1,5 +1,5 @@
 {
-    "version": "0.1",
+    "version": "0.2",
     "name": "achilleskal/summarizer-bundle",
     "description": "Sample symfony bundle",
     "type": "symfony-bundle",

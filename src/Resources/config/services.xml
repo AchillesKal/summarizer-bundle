@@ -8,6 +8,7 @@
 
         <service id="achilleskal_summarizer.api_controller" class="AchillesKal\SummarizerBundle\Controller\TextSummarizerApiController" public="true">
             <argument type="service" id="achilleskal_summarizer.text_summarizer" />
+            <argument type="service" id="event_dispatcher" on-invalid="null" />
         </service>
 
         <service id="AchillesKal\SummarizerBundle\TextSummarizer" alias="achilleskal_summarizer.text_summarizer" public="false" />

@@ -8,6 +8,7 @@
 
 namespace AchillesKal\SummarizerBundle\Controller;
 
+use AchillesKal\SummarizerBundle\Event\AchillesKalSummarizerEvents;
 use AchillesKal\SummarizerBundle\Event\ModifyApiResponseEvent;
 use AchillesKal\SummarizerBundle\TextSummarizer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -34,7 +35,7 @@ class TextSummarizerApiController extends AbstractController
         $event = new ModifyApiResponseEvent($data);
 
         if ($this->eventDispatcher) {
-            $this->eventDispatcher->dispatch('achilleskal.modify_api', $event);
+            $this->eventDispatcher->dispatch(AchillesKalSummarizerEvents::MODIFY_API, $event);
         }
 
         return $this->json([
